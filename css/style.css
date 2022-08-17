@@ -192,6 +192,7 @@ span{
 	height: auto;
 	margin-left: 60px;
 	z-index: -1;
+	margin-top: 10px;
 }
 header.sticky{
 	background: var(--bg-color);
@@ -464,7 +465,7 @@ margin-top: 2.5rem;
 }
 
 .contact{
-	margin: 100px 0	;
+	margin: 100px 18%	;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -530,10 +531,6 @@ margin-top: 2.5rem;
 		padding: 70px 3%;
 		transition: .3s;
 	}
-	.contact{
-		width: 95%;
-		transition: .3s;
-	}
 	:root{
 		--big-font: 4rem;
 		--h2-font: 2.3rem;
@@ -562,17 +559,24 @@ margin-top: 2.5rem;
 		background: var(--main-color);
 		text-align: center;
 		transition: all .40s;
+		opacity: 0.95;
+		font-size: 1.5rem;
 	}
 	.navlist a{
 		display: block;
 		padding: 1.2rem;
 		margin: 1.5rem;
-		border-right: 2px solid var(--bg-color);
+	/*	border-right: 2px solid var(--bg-color);*/
 		color: var(--bg-color);
+		font-family: vogue;
+		text-transform: uppercase;
+		font-weight: 400;
+		line-height: 1.5;
 	}
 	.navlist a:hover{
-		background: var(--bg-color);
-		color: var(--main-color);
+	/*	background: var(--bg-color);
+		color: var(--main-color);	*/
+		text-decoration: underline;
 	}
 	.navlist a::after{
 		display: none;
@@ -582,31 +586,68 @@ margin-top: 2.5rem;
 	}
 }
 
+@media (min-width: 800px){
+	.mostrarMobile{
+		display: none;
+	}
+}
+
 @media (max-width: 800px){
+
+	/*Inicio Estilos mobile*/
+
+	.mostrarDesktop{
+		display: none;
+	}
+
+	.padding-home {
+		padding: 30px 8%;
+	}
+
+	.home-text h1{
+		font-size: 5rem;
+		padding-left: 45px;
+	}
+
+	.home-text h2{
+		margin-left: 40%;
+    	font-size: 2rem;
+	}
+
+	.social {
+		margin-left: 135px;
+		margin-top: 2rem;
+		width: 190px;
+		position: relative;
+		right: -30%;
+	}
+	.btn{
+		padding: 10px 50px;
+		position: relative;
+    	right: -30%;
+	}
+	/*Fin Estilos mobile*/
+
+
 	.home{
 		grid-template-columns: 1fr;
-		min-height: 130vh;
-		grid-gap: 1rem;
+		min-height: 100vh;
+	/*	grid-gap: 1rem;*/
 	}
 	.home-text{
 		padding-top: 55px;
-	}
-
-	.home-text h2 {
-		margin-left: 0px;
-		font-size: 3rem;
-	}
-
-	.social{
-		margin-left: 0;
+		position: absolute;
 	}
 	.home-img{
 		text-align: center;
+		max-width: 300px;
 	}
 	.home-img img{
-		width: 440px;
-		height: auto;
-		margin-left: 0px;
+		text-align: center;
+		max-width: 370px;
+		/* background-color: aqua; */
+		margin-left: -183px;
+		margin-top: 284px;
 	}
 	.about{
 		grid-template-columns: 1fr;
@@ -624,11 +665,46 @@ margin-top: 2.5rem;
 		transition: .3s;
 	}
 }
+
+@media screen and (min-width:650px) and (max-width:800px){
+
+	.home-text h1 {
+		font-size: 6rem;
+		padding-left: 70px;
+	}
+	.home-text h2 {
+		font-size: 3rem;
+	}
+
+	.home-img img{
+		margin-top: 400px;
+		margin-left: -30px;
+		max-width: 400px;
+	}
+	.social{
+		right: -40%;
+		width: 250px;
+	}
+	.btn{
+		right: -40%;
+
+	}
+}
+
+
 @media (max-width: 540px){
 	.contact .action form input[type="email"] {
 		width: 310px;
 	}
 }
+
+@media(max-width:900px){
+	.contact{
+		width: 80%;
+		margin: 100px 10%;
+	}
+}
+
 
 /*Formulario Contacto*/
 
@@ -642,7 +718,7 @@ margin-top: 2.5rem;
 	font-size: var(--h2-font);
 	font-weight: 500;
 	margin: 7px 0px 20px;
-	line-height: 1.1;
+	line-height: 0.8;
 }
 
 .contact-ul {
@@ -735,7 +811,7 @@ margin-top: 2.5rem;
         grid-template-columns: 2fr 1fr;
     }
     .contact-wrapper > * {
-        padding: 2em;
+    /*    padding: 2em;*/
     }
     .contact-info h4,
     .contact-info ul,
