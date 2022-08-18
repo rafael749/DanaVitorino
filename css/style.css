@@ -45,7 +45,7 @@ header{
 	position: relative;
 }
 .navlist a{
-	font-size: var(--p-font);
+	font-size: 2.5rem;
 	color: var(--text-color);
 	font-weight: 500;
 	padding: 10px 27px;
@@ -552,14 +552,14 @@ margin-top: 2.5rem;
 	}
 	.navlist{
 		position: absolute;
-		top: -600px;
+		top: -750px;
 		left: 0;
 		right: 0;
 		flex-direction: column;
 		background: var(--main-color);
 		text-align: center;
 		transition: all .40s;
-		opacity: 0.95;
+		opacity: 0.98;
 		font-size: 1.5rem;
 	}
 	.navlist a{
@@ -572,6 +572,7 @@ margin-top: 2.5rem;
 		text-transform: uppercase;
 		font-weight: 400;
 		line-height: 1.5;
+		text-decoration: underline;
 	}
 	.navlist a:hover{
 	/*	background: var(--bg-color);
@@ -590,6 +591,12 @@ margin-top: 2.5rem;
 	.mostrarMobile{
 		display: none;
 	}
+	.about-me-h2-xs{
+		display: none;
+	}
+	.about-img-mobile{
+		display: none;
+	}
 }
 
 @media (max-width: 800px){
@@ -601,7 +608,7 @@ margin-top: 2.5rem;
 	}
 
 	.padding-home {
-		padding: 30px 8%;
+		padding: 0px 0%;
 	}
 
 	.home-text h1{
@@ -664,30 +671,146 @@ margin-top: 2.5rem;
 		padding: 65px 3%;
 		transition: .3s;
 	}
+
+	.portfolio-content {
+		grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	}
+}
+
+@media screen and (min-width:350px) and (max-width:649px){
+
+	.navlist a {
+		font-size: 1.5rem;
+		padding: 15px;
+	}
+
+	.navlist{
+		top: -750px;
+	}
+	.home-text h1 {
+		font-size: 4rem;
+		padding-left: 30px;
+	}	
+	.home-text h2 {
+		margin-left: 30%;
+	}
+
+	.home img{
+		width: 290px;
+		margin-left: -70px;
+		margin-top: 288px;
+	}
+
+	.home-img{
+		max-width: 200px;
+	}
+
+	.social {
+		margin-left: 135px;
+		margin-top: 2rem;
+		width: 170px;
+		position: relative;
+		right: -70px;
+	}
+	.btn {
+		padding: 10px 30px;
+		position: relative;
+		right: -70px;
+	}
+
+	.about-title-h2-xs{
+		background-color: #969292;
+	}
+
+	.portfolio-content {
+		grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+	}
+
+	/*ABOUT ME*/
+
+	.about-me-h2-xs h2{
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	.about-me-h2-xs-ocultar {
+		display: none;
+	}
+
+	.about-text-mobile p{
+		margin-top: -40px;
+	}
+
+	.about-img-mobile-ocultar{
+		display: none;
+	}
+	.about2-text-mobile p{
+		margin-top: -150px;
+	}
+
+	p.about2-text {
+		margin-top: -130px;
+	}
 }
 
 @media screen and (min-width:650px) and (max-width:800px){
 
 	.home-text h1 {
-		font-size: 6rem;
+		font-size: 7rem;
 		padding-left: 70px;
 	}
 	.home-text h2 {
-		font-size: 3rem;
+		font-size: 3.5rem;
+	}
+
+	.home-text p{
+		font-size:1.5rem;
 	}
 
 	.home-img img{
-		margin-top: 400px;
-		margin-left: -30px;
-		max-width: 400px;
+		margin-top: 575px;
+		margin-left: 0px;
+		max-width: 450px;
 	}
 	.social{
-		right: -40%;
+		right: -340px;
 		width: 250px;
 	}
 	.btn{
-		right: -40%;
+		margin-top: 20px;
+		right: -350px;
 
+	}
+
+	/*ABOUT ME*/
+
+	.about-me-h2-xs h2{
+		text-align: center;
+		text-decoration: underline;
+	}
+
+	.about-me-h2-xs-ocultar {
+		display: none;
+	}
+
+	.about-text-mobile p{
+		margin-top: -40px;
+	}
+
+	.about-img-mobile-ocultar{
+		display: none;
+	}
+	.about2-text-mobile p{
+		margin-top: -150px;
+		margin-left: 0px;
+	}
+
+	.about2-text {
+		margin-top: -300px;
+	}
+
+	.about-text{
+		margin-left: 90px;
 	}
 }
 
