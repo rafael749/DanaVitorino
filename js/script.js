@@ -28,4 +28,4 @@ sr.reveal('.home-img',{delay:350, origin:'top'})
 
 /*sr.reveal('.sub-service,.about,.portfolio,.service,.cta,.contact',{delay:200, origin:'bottom'})*/
 
-sr.reveal('.sub-service,.about,.portfolio,.service,.cta,.contact',{delay:500, origin:'bottom'})
+/*sr.reveal('.sub-service,.about,.portfolio,.service,.cta,.contact',{delay:500, origin:'bottom'})*/
