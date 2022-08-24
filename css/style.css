@@ -15,7 +15,7 @@
 	--big-font: 8rem;
 	--h2-font: 4rem;
 	--p-font: 1.5rem;
-	--font-vogue: 'Vogue', sans-serif;
+	--font-vogue: vogue;
 }
 body{
 	background: var(--bg-color);
@@ -118,15 +118,14 @@ section{
 	line-height: 1;
 	font-weight: 500;
 	text-transform: uppercase;
-	font-family: var(--font-vogue);
-	font-weight: 400;
+	font-family: vogue;
 }
 
 .home-text h2{
 	margin-left: 130px;
 	font-size: 4rem;
 	font-family: var(--font-vogue);
-	font-weight: 400;
+	font-weight: 500;
 	color: #969292;
 	text-transform: uppercase;
 }
@@ -255,9 +254,9 @@ margin-top: 2.5rem;
 	height: auto;
 }
 .about-text h2{
-	font-family: var(--font-vogue);
+	font-family: vogue;
+	font-weight: 500;
 	font-size: var(--h2-font);
-	font-weight: 400;
 	margin: 0px 0px 25px;
 	line-height: 0.7;
 	text-transform: uppercase;
@@ -299,15 +298,14 @@ margin-top: 2.5rem;
 .commercial h2{
 	text-transform: uppercase;
 	font-family: var(--font-vogue);
-	font-size: var(--h2-font);
 	font-weight: 500;
+	font-size: var(--h2-font);
 	margin: 7px 0px 20px;
 	line-height: 1.1;
 }
 .commercial h3{
 	color: var(--main-color);
 	font-size: 20px;
-	font-weight: 500;
 }
 .commercial p{
 	font-size: var(--p-font);
@@ -378,6 +376,10 @@ margin-top: 2.5rem;
 .layer:hover h5{
 	bottom: 48%;
 	opacity: 1;
+}
+
+.borderRecto img{
+	border-radius: 0px;
 }
 
 .service-content{
@@ -527,16 +529,12 @@ margin-top: 2.5rem;
 }
 
 .end-name-tittle {
-	font-family: 'Vogue', sans-serif;
-	font-style: normal;
-	font-weight: 400;
+	font-family: vogue;
+	font-weight: 500;
 	font-size: var(--h2-font);
 	line-height: 54px;
-
 	color: #000000;
-
 	margin: 5;
-
 }
 
 .end-name-descrip {
@@ -667,8 +665,8 @@ margin-top: 2.5rem;
 	/*	border-right: 2px solid var(--bg-color);*/
 		color: var(--bg-color);
 		font-family: vogue;
+		font-weight: 500;
 		text-transform: uppercase;
-		font-weight: 400;
 		line-height: 1.5;
 		text-decoration: underline;
 	}
@@ -723,8 +721,8 @@ margin-top: 2.5rem;
 	/*	border-right: 2px solid var(--bg-color);*/
 		color: var(--bg-color);
 		font-family: vogue;
+		font-weight: 500;
 		text-transform: uppercase;
-		font-weight: 400;
 		line-height: 1.5;
 		text-decoration: underline;
 	}
@@ -966,6 +964,10 @@ margin-top: 2.5rem;
 		margin-top: -130px;
 	}
 
+	.contact-form form input, .contact-form form textarea {
+		text-align: center;
+	}
+
 	.contact {
 		width: 100%;
 		margin: 100px 0%;
@@ -984,6 +986,7 @@ margin-top: 2.5rem;
 
 	.btn-enviar {
 		width: 100% !important;
+		right: -50%;
 	}
 
 	.end{
@@ -1020,7 +1023,7 @@ margin-top: 2.5rem;
 	}
 	.btn{
 		margin-top: 20px;
-		right: -350px;
+		right: -50%;
 	}
 
 	.end{
@@ -1087,8 +1090,8 @@ margin-top: 2.5rem;
 .contact-title h2{
 	text-transform: uppercase;
 	font-family: vogue;
-	font-size: var(--h2-font);
 	font-weight: 500;
+	font-size: var(--h2-font);
 	margin: 7px 0px 20px;
 	line-height: 0.8;
 	text-align: center;
@@ -1104,7 +1107,7 @@ margin-top: 2.5rem;
 }
 
 .contact-wrapper > * {
-    padding: 1em;
+/*    padding: 1em;*/
 }
 
 .contact-form {
