@@ -17,6 +17,10 @@
 	--p-font: 1.5rem;
 	--font-vogue: vogue;
 }
+.sr{
+	height: 100vh;
+}
+
 body{
 	background: var(--bg-color);
 	color: var(--text-color);
@@ -126,7 +130,7 @@ section{
 	font-size: 4rem;
 	font-family: var(--font-vogue);
 	font-weight: 500;
-	color: #969292;
+	color: var(--main-color);
 	text-transform: uppercase;
 }
 .home-text h5{
@@ -178,7 +182,7 @@ span{
 	color: var(--bg-color);
 	background: var(--main-color);
 	font-size: var(--p-font);
-	padding: 20px 50px;
+	padding: 15px 70px;
 	font-weight: 500;
 	line-height: 24px;
 	border-radius: 30px;
@@ -351,7 +355,7 @@ margin-top: 2.5rem;
 	transition: all .40s;
 }
 .layer:hover{
-	background: linear-gradient(rgba(0,0,0,0.5) 0%, #191919);
+	background: linear-gradient(rgba(0,0,0,0.5) 0%, #05317ad6);
 }
 .layer h3{
 	position: absolute;
@@ -588,36 +592,32 @@ margin-top: 2.5rem;
 } 
 
 .end-bar {
-
-	height: 52px;
-	grid-column: 1/3;
-	grid-row: 2;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-
-
-	background: #003172;
-/*	border-radius: 0px 0px 10px 10px;*/
+display: flex;
+height: 52px;
+grid-column: 1/3;
+grid-row: 2;
+align-items: center;
+justify-content: center;
+text-align: center;
+background: #003172;
+border-radius: 0px 0px 10px 10px;
 }
 
 .end-bar p {
-
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 17.1214px;
-	line-height: 26px;
-	letter-spacing: 1px;
-	color: #FFFFFF;
-	padding: 1em;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17.1214px;
+line-height: 26px;
+letter-spacing: 1px;
+color: #FFFFFF;
 }
 
 /*Footer*/
 
 @media (max-width: 1425px){
 	header{
-		padding: 16px 9%;
+		padding: 45px 9%;
 		transition: .3s;
 	}
 	header.sticky{
@@ -693,6 +693,10 @@ margin-top: 2.5rem;
 }
 
 @media screen and (min-width:971px) and (max-width:1024px){
+
+	.navlist.active {
+		padding: 100px;
+	}
 
 	.logo img {
 		max-width: 100%;
@@ -858,7 +862,7 @@ margin-top: 2.5rem;
 	/*	grid-gap: 1rem;*/
 	}
 	.home-text{
-		padding-top: 55px;
+		padding-top: 170px;
 		position: absolute;
 	}
 	.home-img{
@@ -909,7 +913,7 @@ margin-top: 2.5rem;
 		top: -750px;
 	}
 	.home-text h1 {
-		font-size: 4rem;
+		font-size: 5rem;
 		padding-left: 30px;
 	}	
 	.home-text h2 {
@@ -919,7 +923,7 @@ margin-top: 2.5rem;
 	.home img{
 		width: 290px;
 		margin-left: -70px;
-		margin-top: 288px;
+		margin-top: 445px;
 	}
 
 	.home-img{
@@ -1009,15 +1013,27 @@ margin-top: 2.5rem;
 		padding: 1em;
 	}
 
-.container-grid-Aldana,
-.container-grid-Giuliano,
-.container-grid-musculosas,
-.container-grid-NadiayCelina,
-.container-grid-winters{
-	height: auto;
+	.container-grid-Aldana,
+	.container-grid-Giuliano,
+	.container-grid-musculosas,
+	.container-grid-NadiayCelina,
+	.container-grid-winters{
+		height: auto;
+	}
 }
 
+@media screen and (min-width:350px) and (max-width:400px){
+	.home-text {
+		padding-top: 140px;
+	}
 
+	.navlist a {
+		padding: 8px;
+	}
+
+	.home img {
+		margin-top: 377px;
+	}
 }
 
 @media screen and (min-width:650px) and (max-width:800px){
@@ -1102,6 +1118,16 @@ margin-top: 2.5rem;
 	
 }
 
+.titulo-album{
+	padding: 0 18%;
+	position: absolute;
+	padding-top: 50px;
+	font-size: 2rem;	
+}
+
+.titulo-album-right{
+right: 0;
+}
 
 /*Formulario Contacto*/
 
@@ -1534,7 +1560,15 @@ margin-top: 2.5rem;
 	.container-grid-winters{
 		height: auto;
 	}
+
+	.bx.bx-x{
+		top: 30%;
+		right: 15%;
+	}
 }
+
+
+
 
 
 
