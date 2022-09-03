@@ -1574,13 +1574,20 @@ right: 0;
 	.container-grid-Giuliano,
 	.container-grid-musculosas,
 	.container-grid-NadiayCelina,
-	.container-grid-winters{
+	.container-grid-winters,.container-grid-weekend{
 		height: auto;
 	}
 
 	.bx.bx-x{
 		top: 30%;
 		right: 15%;
+	}
+
+	.titulo-album {
+		padding: 0 2%;
+		position: absolute;
+		padding-top: 15px;
+		font-size: 2rem;
 	}
 }
 
