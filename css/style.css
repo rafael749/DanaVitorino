@@ -107,7 +107,8 @@ section{
 	min-height: 100vh;
 	height: 100%;
 	width: 100%;
-	background: url(../img/background.png);
+	background: linear-gradient(to top right, #ffffff 0%, #ffffff 100%);
+	background: url(../img/Dana-Vitorino-Portada-WEB.jpg);
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -335,6 +336,21 @@ margin-top: 2.5rem;
 	text-align: center;
 	cursor: pointer;
 }
+
+.container-grid-commercial{
+	display: grid;
+	height: 1000px;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(4,1fr);
+	grid-template-areas: 
+	"img-1 img-2 img-3"
+	"img-1 img-2 img-3"
+	"img-4 img-5 img-6"
+	"img-4 img-5 img-6";
+	gap: 1rem;
+}
+
+
 .col{
 	position: relative;
 }
@@ -1252,7 +1268,7 @@ right: 0;
 	position: absolute;
   }
   .container .swiper-container{
-	width: 100%;
+	width: 90%;
 	height: 100%;
   }
   .container .swiper-slide {
@@ -1261,7 +1277,7 @@ right: 0;
 	font-size: 18px;
 	background: #fff;
 	text-align: start;
-	box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+/*	box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);	*/
    
   }
   .container .swiper-slide img{
@@ -1284,23 +1300,26 @@ right: 0;
 	  color: #1d6ce2;
   }
   .card-link{
-	display: none;
+	display: block;
   }
   .swiper-button-next{
-	  right: 26px !important;
+	color:var(--main-color);
+	  right: -20px !important;
+	  font-weight: 600;
   }
   .swiper-button-prev{
+	color:var(--main-color);
 	  left: 26px !important;
+	  font-weight: 600;
   }
   
-  .swiper-button-next{
-	background-color: #3205ff;
-	width: 50px;
-	height: 50px;
-	border: 0.2rem solid white;
-	border-radius: 50%;
-	display: none !important;
-  }
+  .swiper-button-next {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+    display: block !important;
+    top: 57% !important;
+	}
   
   .swiper-button-prev{
 	background-color: #3205ff;
@@ -1310,9 +1329,6 @@ right: 0;
 	border-radius: 50%;
 	display: none !important;
   }
-
-
-
 
   /*
   
@@ -1333,7 +1349,7 @@ right: 0;
 .about-img .container .swiper-slide img{
 	display: block;
 	width: 100%;
-	height: 400px;
+	height: 450px;
 	object-fit: cover;
 }
 
@@ -1564,6 +1580,14 @@ right: 0;
 
 
 @media screen and (min-width:350px) and (max-width:649px){
+
+	.swiper-button-next {
+		right: -35px !important;
+	}
+
+	.dana-Project {
+		border-radius: 0px;
+	}
 
 	.swiper-containerAbout {
 		max-width: 350px;

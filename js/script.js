@@ -130,3 +130,4 @@ const addImage = (srcImage)=>{
 containerImage.addEventListener('click',()=>{
 	containerImage.classList.toggle('move');
 })
+
