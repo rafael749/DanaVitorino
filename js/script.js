@@ -90,15 +90,15 @@ var swiper = new Swiper('.swiper-container', {
 		  },
 		  680: {
 			slidesPerView: 1,
-			spaceBetween: 40,
+			spaceBetween: 20,
 		  },
 		  920: {
 			slidesPerView: 1,
-			spaceBetween: 40,
+			spaceBetween: 20,
 		  },
 		  1240: {
 			slidesPerView: 1,
-			spaceBetween: 50,
+			spaceBetween: 20,
 		  },
 		} 
 		});	

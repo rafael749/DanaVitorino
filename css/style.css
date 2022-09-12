@@ -149,13 +149,11 @@ span{
 }
 .home-text p{
 	font-size: var(--p-font);
-	color: var(--secound-color);
 	line-height: 28px;
 	margin-bottom: 20px;
 }
 
 .social{
-	margin-left: 135px;
 	margin-top: 2rem;
 }
 
@@ -178,7 +176,6 @@ span{
 	transition: .5s;
 }
 .btn{
-	margin-left: 135px;
 	display: inline-block;
 	color: var(--bg-color);
 	background: var(--main-color);
@@ -214,6 +211,12 @@ header.sticky{
 	align-items: center;
 	text-align: center;
 }
+
+.editorial-p{
+font-size: 1.6rem;
+}
+
+
 .sub-box{
 	padding: 45px 45px 45px 45px;
 	transition: ease .50s;
@@ -540,7 +543,6 @@ margin-top: 2.5rem;
 	cursor: pointer;
 }
 
-
 /*Footer*/
 
 
@@ -705,6 +707,7 @@ color: #FFFFFF;
 	}
 	.navlist.active{
 		top: 100%;
+		height: 100vh;
 	}
 }
 
@@ -853,7 +856,7 @@ color: #FFFFFF;
 	}
 
 	.home-text h2{
-		margin-left: 40%;
+		margin-left: 22%;
     	font-size: 2rem;
 	}
 
@@ -878,7 +881,7 @@ color: #FFFFFF;
 	/*	grid-gap: 1rem;*/
 	}
 	.home-text{
-		padding-top: 170px;
+		padding-top: 0px;
 		position: absolute;
 	}
 	.home-img{
@@ -898,6 +901,8 @@ color: #FFFFFF;
 	.about-img{
 		text-align: center;
 		margin-bottom: 30px;
+		display: flex;
+		justify-content: center;
 	}
 	:root{
 		--big-font: 3.4rem;
@@ -929,11 +934,11 @@ color: #FFFFFF;
 		top: -750px;
 	}
 	.home-text h1 {
-		font-size: 5rem;
+		font-size: 4rem;
 		padding-left: 30px;
 	}	
 	.home-text h2 {
-		margin-left: 30%;
+		margin-left: 22%;
 	}
 
 	.home img{
@@ -951,12 +956,13 @@ color: #FFFFFF;
 		margin-top: 2rem;
 		width: 170px;
 		position: relative;
-		right: -70px;
+		right: 100px;
 	}
 	.btn {
 		padding: 10px 30px;
 		position: relative;
-		right: -70px;
+		right: -35px;
+		width: 170px;
 	}
 
 	.about-title-h2-xs{
@@ -1174,9 +1180,12 @@ right: 0;
 /*    padding: 1em;*/
 }
 
-.contact-form {
+.contact-p{
+	padding: 0px 20px;
+	padding-top: 30px;
+	font-size: 1.8rem;
+	text-align: left;
 }
-
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1190,6 +1199,7 @@ right: 0;
     margin: 0;
     padding: 1em;
 	text-align: left;
+	height: 200px;
 }
 
 .contact-form form .block {
@@ -1234,6 +1244,7 @@ right: 0;
     .contact-wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr;
+		grid-gap: 1rem;
     }
     .contact-wrapper > * {
     /*    padding: 2em;*/
@@ -1337,11 +1348,11 @@ right: 0;
   */
 
 .swiper-containerAbout {
-   max-width: 500px;
+   max-width: 550px;
    overflow: hidden;
    /* min-height: 395px; */
    height: auto;
-   padding: 0px 100px;
+   padding: 0px 50px;
 }
 
 
