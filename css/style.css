@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	/*font-family: 'Poppins', 'sans-serif';*/
+	font-family: 'Poppins', 'sans-serif';
 	list-style: none;
 	text-decoration: none;
 	scroll-behavior: smooth;
@@ -19,6 +19,13 @@
 }
 .sr{
 	height: 100vh;
+}
+.img-portada{
+	width: 100%;
+	position: absolute;
+	height: 100vh;
+	/* background-size: cover; */
+	object-fit: cover;
 }
 
 body{
@@ -45,8 +52,8 @@ header{
 }
 .navlist{
     display: flex;
-    width: 800px;
-    justify-content: space-evenly;
+    width: 1200px;
+    justify-content: space-between;
 }
 .navlist li{
 	position: relative;
@@ -62,7 +69,7 @@ header{
 	width: 0;
 	height: 5px;
 	background: var(--main-color);
-	bottom: 3px;
+	bottom: -1px;
 	left: 0;
 	transition: ease .40s;
 }
@@ -78,7 +85,7 @@ header{
 }
 .top-btn{
 	display: inline-block;
-	padding: 10px 70px;
+	padding: 10px 50px;
 	background: var(--main-color);
 	border: 2px solid var(--main-color);
 	border-radius: 30px;
@@ -107,8 +114,9 @@ section{
 	min-height: 100vh;
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(to top right, #ffffff 0%, #ffffff 100%);
-	background: url(../img/Dana-Vitorino-Portada-WEB.jpg);
+	background: linear-gradient(90deg, #ffffff8a 40%,#fff0 50%,transparent);
+  /*background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.5));*/
+  /*background: url(../img/Dana-Vitorino-Portada-WEB.jpg);*/
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -127,7 +135,7 @@ section{
 }
 
 .home-text h2{
-	margin-left: 130px;
+	margin-left: 160px;
 	font-size: 4rem;
 	font-family: var(--font-vogue);
 	font-weight: 500;
@@ -149,12 +157,12 @@ span{
 }
 .home-text p{
 	font-size: var(--p-font);
-	line-height: 28px;
 	margin-bottom: 20px;
 }
 
 .social{
 	margin-top: 2rem;
+	width: 600px;
 }
 
 .social a{
@@ -180,7 +188,7 @@ span{
 	color: var(--bg-color);
 	background: var(--main-color);
 	font-size: var(--p-font);
-	padding: 15px 70px;
+	padding: 18px 60px;
 	font-weight: 500;
 	line-height: 24px;
 	border-radius: 30px;
@@ -262,13 +270,14 @@ margin-top: 2.5rem;
 	height: auto;
 }
 .about-text h2{
-	font-family: sans-serif;
+	font-family: 'Vogue';
 	font-weight: 500;
-	font-size: 2rem;
+	font-size: 6rem;
 	margin: 0px 0px 25px;
 	line-height: 0.7;
 	text-transform: uppercase;
 }
+
 .about-text h3{
 	color: var(--main-color);
 	font-size: 20px;
@@ -289,9 +298,9 @@ margin-top: 2.5rem;
 .myProject{
 	color: white;
 	text-transform: uppercase;
-	font-size: 4rem;
+	font-size: 6rem;
 	font-family: vogue;
-	font-weight: 400;
+	font-weight: 500;
 	text-align: center;
 	margin-bottom: 5rem;
 }
@@ -317,8 +326,8 @@ margin-top: 2.5rem;
 	text-transform: uppercase;
 	font-family: var(--font-vogue);
 	font-weight: 500;
-	font-size: var(--h2-font);
-	margin: 7px 0px 20px;
+	font-size: 6rem;
+	margin: 60px 0px 20px;
 	line-height: 1.1;
 }
 .commercial h3{
@@ -927,11 +936,14 @@ color: #FFFFFF;
 	.navlist a {
 		font-size: 1.5rem;
 		padding: 15px;
-		margin-left: -50%;
+		margin-left: -67%;
 	}
+
+
 
 	.navlist{
 		top: -750px;
+		justify-content: flex-start;
 	}
 	.home-text h1 {
 		font-size: 4rem;
@@ -939,6 +951,10 @@ color: #FFFFFF;
 	}	
 	.home-text h2 {
 		margin-left: 22%;
+	}
+
+	.home{
+	background: linear-gradient(90deg, #ffffff8a 35%,#fff0 75%,transparent);
 	}
 
 	.home img{
@@ -978,6 +994,7 @@ color: #FFFFFF;
 	.about-me-h2-xs h2{
 		text-align: center;
 		text-decoration: underline;
+		font-size: 4rem;
 	}
 
 	.about-me-h2-xs-ocultar {
@@ -1000,7 +1017,13 @@ color: #FFFFFF;
 		display: none;
 	}
 
+	.myProject{
+		font-size: 4rem;
+	}
 
+	.commercial h2 {
+		font-size: 4rem;
+	}
 
 	.contact-form form input, .contact-form form textarea {
 		text-align: center;
@@ -1143,7 +1166,7 @@ color: #FFFFFF;
 .titulo-album{
 	padding: 0 18%;
 	position: absolute;
-	padding-top: 50px;
+	padding-top: 20px;
 	font-size: 2rem;	
 }
 
@@ -1199,7 +1222,7 @@ right: 0;
     margin: 0;
     padding: 1em;
 	text-align: left;
-	height: 200px;
+	height: 180px;
 }
 
 .contact-form form .block {
@@ -1269,7 +1292,7 @@ right: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;  
-	min-height: 750px;
+	min-height: 850px;
 	border-radius: 3rem 3rem 0px 0px;
   }
   .container-miSwiper{
