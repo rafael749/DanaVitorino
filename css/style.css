@@ -106,6 +106,10 @@ section{
 	padding: 100px 18%;
 }
 
+.section-commercial{
+	padding: 100px 15%;
+}
+
 .padding-home{
 	padding: 200px 10%;
 }
@@ -222,6 +226,7 @@ header.sticky{
 
 .editorial-p{
 font-size: 1.6rem;
+font-weight: 400;
 }
 
 
@@ -327,9 +332,18 @@ margin-top: 2.5rem;
 	font-family: var(--font-vogue);
 	font-weight: 500;
 	font-size: 6rem;
-	margin: 60px 0px 20px;
+	margin: 0px;
 	line-height: 1.1;
 }
+
+.editorial{
+	margin-top: -70px;
+}
+
+.personal{
+}
+
+
 .commercial h3{
 	color: var(--main-color);
 	font-size: 20px;
@@ -351,7 +365,7 @@ margin-top: 2.5rem;
 
 .container-grid-commercial{
 	display: grid;
-	height: 1000px;
+	height: 900px;
 	grid-template-columns: repeat(3,1fr);
 	grid-template-rows: repeat(4,1fr);
 	grid-template-areas: 
@@ -720,6 +734,13 @@ color: #FFFFFF;
 	}
 }
 
+@media screen and (min-width:1500px) and (max-width:2000px){
+
+	.end-name {
+		padding-left: 20rem;
+	}
+}
+
 @media screen and (min-width:971px) and (max-width:1024px){
 
 	.navlist.active {
@@ -780,8 +801,13 @@ color: #FFFFFF;
 	}
 
 	.home-text.mostrarDesktop {
-		margin-left: -160px;
-		margin-bottom: 0px;	}
+		margin-left: 30px;
+		margin-bottom: 0px;	
+	}
+
+	.section-commercial {
+		padding: 100px 0%;
+	}
 
 	.btn{
 		padding: 20px 100px;
@@ -929,6 +955,10 @@ color: #FFFFFF;
 	.end-contact {
 		display: none;
 	}
+
+	.section-commercial {
+		padding: 100px 0%;
+	}
 }
 
 @media screen and (min-width:350px) and (max-width:649px){
@@ -938,8 +968,6 @@ color: #FFFFFF;
 		padding: 15px;
 		margin-left: -67%;
 	}
-
-
 
 	.navlist{
 		top: -750px;
@@ -1017,6 +1045,10 @@ color: #FFFFFF;
 		display: none;
 	}
 
+	.editorial {
+ 	   margin-top: 100px;
+	}
+
 	.myProject{
 		font-size: 4rem;
 	}
@@ -1032,6 +1064,10 @@ color: #FFFFFF;
 	.contact {
 		width: 100%;
 		margin: 100px 0%;
+	}
+
+	.section-commercial {
+	   padding: 100px 0%;
 	}
 
 	.contact-title h2 {
@@ -1321,7 +1357,8 @@ right: 0;
 	object-fit: cover;
   }
   .container .swiper-slide .card-description{
-	  padding:1rem 1rem;
+	  padding: 2rem 2rem;
+	  height: 150px;
   }
   .container .swiper-slide .card-title,.container .swiper-slide .card-text{
 	 margin-bottom: .5rem;
@@ -1582,7 +1619,7 @@ right: 0;
 .img-show {
     margin-top: 0%;
     height: 75vh;
-    width: 75vh;
+/*    width: 75vh;*/
     display: block;
     object-fit: cover;
 }
@@ -1628,11 +1665,13 @@ right: 0;
 		padding: 0px 30px;
 	}
 
+	.container-grid-commercial,
 	.container-grid-Aldana,
 	.container-grid-Giuliano,
 	.container-grid-musculosas,
 	.container-grid-NadiayCelina,
-	.container-grid-winters,.container-grid-weekend{
+	.container-grid-winters,
+	.container-grid-weekend{
 		height: auto;
 	}
 
