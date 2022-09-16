@@ -734,6 +734,44 @@ color: #FFFFFF;
 	}
 }
 
+@media screen and (min-width:1025px) and (max-width:1399px){
+
+	header{
+		padding: 45px 4%;
+	}
+
+	.navlist {
+		justify-content: space-around;
+	}
+
+	.navlist a {
+		font-size: 1.5rem;
+	}
+
+	.btn{
+		padding: 15px 70px;
+	}
+
+	.top-btn p {
+		width: 125px;
+		padding: 0px 0px;
+		font-size: 1.2rem;
+	}
+
+	.home-text h1{
+		font-size: 6rem;
+	}
+
+	.titulo-album {
+		padding: 0 3% !important;
+		font-size: 2rem !important;
+	}
+
+	.btn-enviar {		
+		width: 60% !important;
+	}
+}
+
 @media screen and (min-width:1500px) and (max-width:2000px){
 
 	.end-name {
@@ -801,8 +839,8 @@ color: #FFFFFF;
 	}
 
 	.home-text.mostrarDesktop {
-		margin-left: 30px;
-		margin-bottom: 0px;	
+		margin-left: 85px;
+		margin-bottom: -100px;
 	}
 
 	.section-commercial {
@@ -815,7 +853,7 @@ color: #FFFFFF;
 	}
 
 	.home-text h1 {
-		font-size: 8rem;
+		font-size: 6rem;
 	}
 
 	.home-text h2{
@@ -835,8 +873,8 @@ color: #FFFFFF;
 		margin-top: 380px;
 	}
 
-	.home {
-
+	.swiper-containerAbout {
+		max-width: 450px !important;
 	}
 
 	.padding-home {
@@ -896,11 +934,10 @@ color: #FFFFFF;
 	}
 
 	.social {
-		margin-left: 135px;
 		margin-top: 2rem;
 		width: 190px;
 		position: relative;
-		right: -30%;
+		right: -10%;
 	}
 	.btn{
 		padding: 10px 50px;
@@ -1071,7 +1108,8 @@ color: #FFFFFF;
 	}
 
 	.contact-title h2 {
-		text-align: center;
+		font-size: 4rem !important;
+    	text-align: center !important;
 	}
 
 	.contact-form form p {
@@ -1092,6 +1130,11 @@ color: #FFFFFF;
 	}
 	.end-name {
 		padding: 1em;
+	}
+
+	.end-name-tittle {
+		font-size: 3rem;
+		line-height: 70px;
 	}
 
 	.container-grid-Aldana,
@@ -1137,12 +1180,11 @@ color: #FFFFFF;
 		max-width: 450px;
 	}
 	.social{
-		right: -340px;
 		width: 250px;
 	}
 	.btn{
 		margin-top: 20px;
-		right: -50%;
+		right: -10%;
 	}
 
 	.end{
