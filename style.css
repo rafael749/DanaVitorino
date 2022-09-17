@@ -524,6 +524,7 @@ margin-top: 2.5rem;
 }
 
 .contact{
+	margin: 100px 18%	;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1398,19 +1399,18 @@ right: 0;
 	object-fit: cover;
   }
   .container .swiper-slide .card-description{
-	padding: 1rem 1rem;
-    height: 170px;
+	  padding: 2rem 2rem;
+	  height: 150px;
   }
   .container .swiper-slide .card-title,.container .swiper-slide .card-text{
 	 margin-bottom: .5rem;
-	 height: 50px;
   }
   .container .swiper-slide .card-link{
 	 text-align: center;	
   }
   .container .swiper-slide .card-link a{
 	  text-decoration: none;
-	  color: var(--main-color);
+	  color: #1d6ce2;
   }
   .card-link{
 	display: block;
