@@ -129,6 +129,10 @@ section{
 	align-items: center;
 	grid-gap: 0rem;
 }
+
+.ContactMobile{
+	display: none;
+}
 .home-text h1{
 /*	margin: 100px 0px 100px;*/
 	font-size: var(--big-font);
@@ -713,12 +717,10 @@ color: #FFFFFF;
 		font-family: vogue;
 		text-transform: uppercase;
 		line-height: 1.5;
-		text-decoration: underline;
 	}
 	.navlist a:hover{
 	/*	background: var(--bg-color);
 		color: var(--main-color);	*/
-		text-decoration: underline;
 	}
 	.navlist a::after{
 		display: none;
