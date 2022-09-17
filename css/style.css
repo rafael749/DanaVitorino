@@ -1643,7 +1643,7 @@ right: 0;
 
 .move{
 	transform: translateY(0);
-	z-index: 9999;
+	z-index: 99999;
 }
 
 .img-show {
