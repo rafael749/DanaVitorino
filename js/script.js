@@ -18,16 +18,24 @@ window.onscroll = () => {
 };
 
 const sr = ScrollReveal ({
-	distance: '45px',
+	distance: '-50px',
 	duration: 1000,
 	reset: true
 })
 
+const srEd = ScrollReveal ({
+	distance: '-100px',
+	duration: 1000,
+	reset: true
+})
+
+
 sr.reveal('.home-text',{delay:350, origin:'bottom'})
 sr.reveal('.home-img',{delay:350, origin:'top'})
 
-/* sr.reveal('.about,.editorial,.contact',{delay:200, origin:'bottom'})*/
+ sr.reveal('.portfolio,.commercial,.contact',{delay:200, origin:'bottom'});
 
+ srEd.reveal('.editorial',{delay:200, origin:'bottom'});
 
 /* 
 			S W I P P E R     J S
@@ -128,7 +136,7 @@ images.forEach(image => {
 const addImage = (srcImage)=>{
 	containerImage.classList.toggle('move');
 	imageContainer.src = srcImage;
-	console.log(image.getAttribute('src'));
+	console.log(srcImage.getAttribute('src'));
 }
 
 containerImage.addEventListener('click',()=>{

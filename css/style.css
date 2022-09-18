@@ -263,7 +263,7 @@ font-weight: 400;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
 }
 
-.about{
+.about,.section-editorial{
 	display: grid;
 	grid-template-columns: repeat(2, 2fr);
 	grid-gap: 2rem;
@@ -331,6 +331,7 @@ margin-top: 2.5rem;
 .commercial{
 	text-align: center;
 }
+
 .commercial h2{
 	text-transform: uppercase;
 	font-family: var(--font-vogue);
@@ -366,6 +367,64 @@ margin-top: 2.5rem;
 	text-align: center;
 	cursor: pointer;
 }
+
+/*Agregado jees: estilos mini seccion de contacto*/
+
+.edit {
+	padding: 40px 40px;
+	display: grid;
+	background: #003172;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	border-bottom: 2px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.edit-boton {
+	grid-column: 2/3;
+	display: flex;
+	justify-content: center;
+	padding-top: 2em;
+}
+
+.edit-social {
+	color: white;
+	padding: 0 6em 0 6em;
+}
+
+.edit-social a {
+	color: white;
+}
+
+.edit-social-text {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	font-family: 'Poppins';
+
+}
+
+.edit-boton-btn {
+	display: inline;
+	padding: 10px 70px;
+	background: var(--bg-color);
+	border: 2px solid var(--bg-color);
+	border-radius: 30px;
+	color: var(--main-color);
+	font-size: var(--p-font);
+	font-weight: 500;
+	transition: ease .50s;
+
+}
+
+.edit-boton-btn:hover {
+	transform: scale(1.05);
+	background: var(--bg-color);
+	border: 2px solid var(--bg-color);
+	color: var(--main-color);
+}
+
+/*fin agregado*/
 
 .container-grid-commercial{
 	display: grid;
@@ -580,15 +639,14 @@ margin-top: 2.5rem;
 	box-shadow: 1px 17px 47px rgba(0, 0, 0, 0.25);
 }
 
-.end-name {
-	
-	padding: 8em;
+.end-name {	
+	padding: 100px 80px;
 }
 
 .end-name-tittle {
 	font-family: vogue;
 	font-weight: 500;
-	font-size: var(--h2-font);
+	font-size: 4rem;
 	line-height: 54px;
 	color: #000000;
 	margin: 5;
@@ -604,18 +662,16 @@ margin-top: 2.5rem;
 }
 
 .end-name-social a {
-
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 26px;
+	font-size: 40px;
 	color: #003172;
 	padding: 1rem;
 }
 
 .end-contact {
-	padding: 8em;
-	
+	padding: 100px 80px;	
 }
 
 .end-contact h3{
@@ -1085,6 +1141,47 @@ color: #FFFFFF;
 		font-size: 4rem;
 	}
 
+	/*Agregado jees: estilos mini seccion de contacto*/
+
+	.edit {
+		margin: 0 0 2.5em 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		background: #003172;
+		padding: 0px;
+
+		height: 700px;
+	}
+
+	.edit-boton {
+		width: 100% !important;
+		right: -50%;
+		padding-top: 0.5em;
+
+	}
+
+	.edit-social {
+		color: white;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.edit-social-text {
+		font-size: 28px;
+		text-align: center;
+	}
+
+	.edit-social a {
+		color: white;
+		align-content: center;
+	}
+
+	/*Agregado jees: fin*/
+
+
+
 	.contact-form form input, .contact-form form textarea {
 		text-align: center;
 	}
@@ -1125,7 +1222,7 @@ color: #FFFFFF;
 
 	.end-name-tittle {
 		font-size: 3rem;
-		line-height: 70px;
+		line-height: 40px;
 	}
 
 	.container-grid-Aldana,
@@ -1225,6 +1322,26 @@ color: #FFFFFF;
 		width: 100%;
 		margin: 100px 0%;
 	}
+
+	/*Agregado jees: inicio*/
+	.edit {
+		margin: 0;
+		padding: 1.5em;
+	}
+
+	.edit-social {
+		padding: 0 3.5em 0 3.5em;
+	}
+
+	.end-name {
+		padding: 3em 4em 3em 4em;
+	}
+
+	.end-contact {
+		padding: 3em;
+	}
+
+	/*Agregado jees: fin*/	
 	
 }
 
@@ -1249,10 +1366,10 @@ right: 0;
 	text-transform: uppercase;
 	font-family: vogue;
 	font-weight: 500;
-	font-size: var(--h2-font);
+	font-size: 6rem;
 	margin: 7px 0px 20px;
 	line-height: 0.8;
-	text-align: center;
+	text-align: start;
 }
 
 .contact-ul {
@@ -1639,6 +1756,8 @@ right: 0;
 	justify-content: center;
 	align-items: center;
 	transition: transform .4s ease-in;
+	z-index: 99999;
+
 }
 
 .move{
