@@ -732,10 +732,6 @@ color: #FFFFFF;
 		transition: .3s;
 	}
 
-	.contact{
-		margin: 70px 3%;
-	}
-
 	.end{
 		margin: 70px 0%;
 	}
@@ -1320,7 +1316,7 @@ color: #FFFFFF;
 @media(max-width:900px){
 	.contact{
 		width: 100%;
-		margin: 100px 0%;
+		margin: 0px 0%;
 	}
 
 	/*Agregado jees: inicio*/
@@ -1343,6 +1339,10 @@ color: #FFFFFF;
 
 	/*Agregado jees: fin*/	
 	
+}
+
+section#portfolio {
+    margin: -70px 0px;
 }
 
 .titulo-album{
@@ -1557,8 +1557,7 @@ right: 0;
 .swiper-containerAbout {
    max-width: 550px;
    overflow: hidden;
-   /* min-height: 395px; */
-   height: auto;
+   max-height: 550px;
    padding: 0px 50px;
 }
 
