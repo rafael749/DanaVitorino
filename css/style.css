@@ -1847,6 +1847,17 @@ right: 0;
 }
 
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
+	
+	.navlist a {
+		display: block;
+		padding: 0.3rem;
+		margin: 0.3rem;
+		line-height: 1;
+	}	
+	
+	header {
+		padding: 0px 9%;
+	}
 
 	.mostrarMobile a,.social{
 		display: none;
@@ -1858,11 +1869,11 @@ right: 0;
 	}
 
 	.home-text h1{
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 
 	.home-text h2{
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 
 }
