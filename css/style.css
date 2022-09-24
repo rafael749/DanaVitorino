@@ -757,7 +757,7 @@ color: #FFFFFF;
 		background: var(--main-color);
 		text-align: center;
 		transition: all .40s;
-		opacity: 0.98;
+		opacity: 1;
 		font-size: 1.5rem;
 	}
 	.navlist a{
@@ -863,7 +863,7 @@ color: #FFFFFF;
 		background: var(--main-color);
 		text-align: center;
 		transition: all .40s;
-		opacity: 0.98;
+		opacity: 1;
 		font-size: 1.5rem;
 	}
 	.navlist a{
@@ -1839,10 +1839,4 @@ right: 0;
 		font-size: 2rem;
 	}
 }
-
-
-
-
-
-
 /*F I N   G A L L E R Y*/ 
