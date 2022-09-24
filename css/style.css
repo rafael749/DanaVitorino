@@ -1101,7 +1101,6 @@ color: #FFFFFF;
 
 	.about-me-h2-xs h2{
 		text-align: center;
-		text-decoration: underline;
 		font-size: 4rem;
 	}
 
@@ -1369,7 +1368,7 @@ right: 0;
 	font-size: 6rem;
 	margin: 7px 0px 20px;
 	line-height: 0.8;
-	text-align: start;
+	text-align: center;
 }
 
 .contact-ul {
