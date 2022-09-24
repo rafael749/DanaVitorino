@@ -1326,7 +1326,7 @@ color: #FFFFFF;
 	}
 
 	.edit-social {
-		padding: 0 3.5em 0 3.5em;
+		padding: 0 1.5em 0 1.5em;
 	}
 
 	.end-name {
@@ -1839,4 +1839,33 @@ right: 0;
 		font-size: 2rem;
 	}
 }
+
+@media screen and (min-width:801px) and (max-width:970px){
+
+	.swiper-containerAbout {
+		max-width: 350px;
+	}
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+
+	.mostrarMobile a,.social{
+		display: none;
+	}
+
+	.home-text{
+		width: 390px;		
+		margin-top: 50px;
+	}
+
+	.home-text h1{
+		font-size: 3rem;
+	}
+
+	.home-text h2{
+		font-size: 2rem;
+	}
+
+}
+
 /*F I N   G A L L E R Y*/ 
